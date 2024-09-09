@@ -8,6 +8,7 @@ public:
     friend class LogicSystem;
     HttpConnection(tcp::socket socket);
     void Start();//监听读写事件
+    void PreParseGetParam();
 private:
     void CheckDeadline();//超时检测
     void WriteResponse(); //应答
@@ -19,4 +20,6 @@ private:
     net::steady_timer deadline_{
         _socket.get_executor(),std::chrono::seconds(60)
     };
+    std::string _get_url;
+    std::unordered_map<std::string, std::string> _get_params;
 };
