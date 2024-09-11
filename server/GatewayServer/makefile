@@ -1,5 +1,5 @@
 test:*.cc
-	g++ -o $@ $^ -std=c++14  -lprotobuf -lboost_filesystem -ljsoncpp -lgrpcpp -lgrpc
+	g++ -o $@ $^ -std=c++14 -lboost_filesystem -ljsoncpp  -lprotobuf `pkg-config --cflags --libs grpc++`
 .PHONY:clean
 clean:
 	rm -r test
