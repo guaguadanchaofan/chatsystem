@@ -15,6 +15,12 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/ini_parser.hpp>
 #include <unordered_map>
+#include <atomic>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+
+
 namespace beast = boost::beast;
 namespace http = beast::http;
 namespace net = boost::asio;
@@ -27,6 +33,3 @@ enum ErrorCodes
     Error_Json = 1001,
     PRCFailed = 1002,
 };
-
-class ConfigMgr;
-extern ConfigMgr gCfgMgr;

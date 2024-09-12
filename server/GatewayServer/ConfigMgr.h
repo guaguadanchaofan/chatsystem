@@ -34,11 +34,14 @@ struct SectionInfo
 class ConfigMgr
 {
 public:
-    ConfigMgr();
+
+
     ConfigMgr(const ConfigMgr& src)
     {
         this -> _config_map = src._config_map;
     }
+
+
     ConfigMgr& operator =(const ConfigMgr& src)
     {
         if(&src == this)
@@ -48,10 +51,19 @@ public:
         this -> _config_map = src._config_map;
         return *this;
     }
+
+
     ~ConfigMgr()
     {
         _config_map.clear();
     }
+
+    static ConfigMgr& Inst()
+    {
+        static ConfigMgr cfg_mgr;
+        return cfg_mgr;
+    }
+
     SectionInfo operator[](const std::string &section)
     {
         if(_config_map.find(section) == _config_map.end())
@@ -63,6 +75,9 @@ public:
             return _config_map[section];
         }
     }
+
+
 private:
+    ConfigMgr();
     std::map<std::string,SectionInfo> _config_map; 
 };

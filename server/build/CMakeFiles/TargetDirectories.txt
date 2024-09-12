@@ -1,0 +1,2 @@
+/home/guagua/Desktop/work/chatsystem/server/build/CMakeFiles/edit_cache.dir
+/home/guagua/Desktop/work/chatsystem/server/build/CMakeFiles/rebuild_cache.dir

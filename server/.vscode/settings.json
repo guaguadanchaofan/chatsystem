@@ -70,7 +70,10 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "queue": "cpp",
+        "unordered_set": "cpp",
+        "fstream": "cpp"
     },
     "zenMode.silentNotifications": false
 }
