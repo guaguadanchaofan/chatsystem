@@ -19,7 +19,7 @@
 #include <queue>
 #include <mutex>
 #include <condition_variable>
-
+#include <hiredis/hiredis.h>
 
 namespace beast = boost::beast;
 namespace http = beast::http;
@@ -30,6 +30,15 @@ using tcp = boost::asio::ip::tcp;
 enum ErrorCodes
 {
     Success = 0,
-    Error_Json = 1001,
-    PRCFailed = 1002,
+    Error_Json = 1001,  //json解析失败
+    PRCFailed = 1002,   //RPC请求错误
+    VarifyExpired = 1003,  //验证码过期
+    VarifyCodeErr = 1004, //验证码错误
+    UserExist = 1005, //用户已经存在
+    PasswdErr = 1006, //密码错误
+    EmailNotMatch = 1007, //邮箱不匹配
+    PasswdUpFailed = 1008, //更新密码失败
+    PasswdInvalid = 1009, //密码更新失败
 };
+
+#define CODEPREFIX "code_"

@@ -10,6 +10,5 @@ public:
 private:
     net::io_context& _ioc; //上下文
     boost::asio::ip::tcp::acceptor _acceptor;//连接器 接收器
-    boost::asio::ip::tcp::socket _socket; //
 };
 

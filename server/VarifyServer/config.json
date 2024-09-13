@@ -4,12 +4,12 @@
       "pass": "YTZJRFYWIRXTCDTT"
     },
     "mysql":{
-      "host": "81.68.86.146",
+      "host": "192.168.0.129",
       "prot": 3306,
       "passwd":123456
     },
     "redis":{
-      "host":"81.68.86.146",
+      "host":"192.168.0.129",
       "potr": 6379,
       "passwd":123456
     }

@@ -5,8 +5,6 @@ Cserver::Cserver(net::io_context& ioc, unsigned short &port):
 _ioc(ioc),
 _acceptor(ioc, tcp::endpoint(tcp::v4(), port))
 {
-    boost::asio::ip::tcp::endpoint endpoint(tcp::v4(), port);
-    boost::asio::ip::tcp::acceptor _acceptor(ioc, endpoint);
 }
 
 void Cserver::Start()

@@ -73,7 +73,9 @@
         "variant": "cpp",
         "queue": "cpp",
         "unordered_set": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp"
     },
     "zenMode.silentNotifications": false
 }
