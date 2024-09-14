@@ -72,13 +72,13 @@ LogicSystem::LogicSystem()
             beast::ostream(conn -> _response.body()) << jsonstr;
             return true;
         }
-        else
+        else //成功
         {
             auto email = src_root["email"].asString();
             auto rsp = VerifyGrpcClient::GetInstance() -> GetVarifyCode(email);
             std::cout << "email is " << email <<std::endl;
             root["error"] = rsp.error();
-            root["error"] = src_root["email"];
+            root["email"] = src_root["email"];
             std::string jsonstr = root.toStyledString();
             beast::ostream(conn -> _response.body()) << jsonstr;
             return true;

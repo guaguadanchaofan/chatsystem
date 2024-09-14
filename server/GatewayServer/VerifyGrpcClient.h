@@ -46,11 +46,13 @@ public:
         Status status = stub -> GetVarifyCode(&context,request,&reply);
         if(status.ok())
         {   
+
             pool_ -> returnConnection(std::move(stub));
             return reply;
         }
         else
         {
+
             pool_ -> returnConnection(std::move(stub));
             reply.set_error(ErrorCodes::PRCFailed);
             return reply;

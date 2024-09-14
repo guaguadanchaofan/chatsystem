@@ -52,15 +52,16 @@ std::unique_ptr<VarifyService::Stub> RPConPool::getConnection()
         {
             return true;
         }
-            return !connections_.empty();
+        return !connections_.empty();
     });
     if(b_stop_)
     {
+        std::cout<< b_stop_ << std::endl;
         return nullptr;
     }
     auto context = std::move(connections_.front());
     connections_.pop();
-    return std::unique_ptr<VarifyService::Stub>();
+    return context;
 }
 
 VerifyGrpcClient::VerifyGrpcClient()

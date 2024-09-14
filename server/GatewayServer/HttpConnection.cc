@@ -7,7 +7,6 @@ HttpConnection::HttpConnection(boost::asio::io_context & ioc) : _socket(ioc)
 void HttpConnection::Start()
 {
     auto self = shared_from_this();
-http:
     async_read(_socket, _buffer, _request, [self](beast::error_code ec, std::size_t bytes_transferred)
                {
                    try
@@ -18,6 +17,8 @@ http:
                            return;
                        }
 
+
+                      
                        boost::ignore_unused(bytes_transferred);
                        self->HandleReq();
                        self->CheckDeadline();
@@ -44,10 +45,10 @@ void HttpConnection::WriteResponse() // 回包
 {
     auto self = shared_from_this();
     _response.content_length(_response.body().size());
-    http::async_write(_socket, _response, [self](beast::error_code ec, std::size_t bytes_transferred)
-                      {
+    http::async_write(_socket, _response, [self](beast::error_code ec, std::size_t bytes_transferred){
          self -> _socket.shutdown(tcp::socket::shutdown_send,ec);
-         self -> deadline_.cancel(); });
+         self -> deadline_.cancel(); 
+         });
 }
 unsigned char ToHex(unsigned char x)
 {
