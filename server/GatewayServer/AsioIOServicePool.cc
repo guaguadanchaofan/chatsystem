@@ -2,7 +2,7 @@
 
 
 
-AsioIOService::AsioIOService(std::size_t size):
+AsioIOServicePool::AsioIOServicePool(std::size_t size):
 _ioServices(size),
 _works(size),
 _nextIOService(0)
@@ -21,7 +21,7 @@ _nextIOService(0)
     }
 
 }
-boost::asio::io_context &AsioIOService::GetIOService()
+boost::asio::io_context &AsioIOServicePool::GetIOService()
 {
     // TODO: 在此处插入 return 语句
     auto& service = _ioServices[_nextIOService++];
@@ -32,7 +32,7 @@ boost::asio::io_context &AsioIOService::GetIOService()
     return service;
 }
 
-void AsioIOService::Stop()
+void AsioIOServicePool::Stop()
 {
     //因为仅仅执行work。reset并不能让iocontext从run的状态中推出
     //当iocontext已经绑定了读或写的监听事件后，还需要手动stop该服务
@@ -50,7 +50,7 @@ void AsioIOService::Stop()
 }
 
 
-AsioIOService::~AsioIOService()
+AsioIOServicePool::~AsioIOServicePool()
 {
     Stop();
     std::cout<<"AsioIOServicePool destruct" <<std::endl;

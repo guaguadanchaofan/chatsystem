@@ -54,7 +54,7 @@ public:
         {
 
             pool_ -> returnConnection(std::move(stub));
-            reply.set_error(ErrorCodes::PRCFailed);
+            reply.set_error(ErrorCodes::RPCFailed);
             return reply;
         }
     }

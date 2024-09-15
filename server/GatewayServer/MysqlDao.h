@@ -16,6 +16,16 @@ public:
 };
 
 
+struct UserInfo
+{
+	std::string name;
+	std::string pwd;
+	int uid;
+	int url;
+	std::string email;
+};
+
+
 class MySqlPool {
 public:
 	MySqlPool(const std::string& url, const std::string& user, const std::string& pass, const std::string& schema, int poolSize)
@@ -32,7 +42,7 @@ public:
 				pool_.push(std::make_unique<SqlConnection>(con, timestamp));
 			}
 
-			_check_thread = 	std::thread([this]() {
+			_check_thread = std::thread([this]() {
 				while (!b_stop_) {
 					checkConnection();
 					std::this_thread::sleep_for(std::chrono::seconds(60));
@@ -59,7 +69,7 @@ public:
 			pool_.pop();
 			Defer defer([this, &con]() {
 				pool_.push(std::move(con));
-			});
+			}); 
 
 			if (timestamp - con->_last_oper_time < 5) {
 				continue;
@@ -111,7 +121,6 @@ public:
 		b_stop_ = true;
 		cond_.notify_all();
 	}
-
 	~MySqlPool() {
 		std::unique_lock<std::mutex> lock(mutex_);
 		while (!pool_.empty()) {
@@ -130,4 +139,23 @@ private:
 	std::condition_variable cond_;
 	std::atomic<bool> b_stop_;
 	std::thread _check_thread;
+};
+
+
+
+
+
+
+
+class MysqlDao
+{
+public:
+    MysqlDao();
+    ~MysqlDao();
+    int RegUser(const std::string& name, const std::string& email, const std::string& pwd);
+	bool CheckEmail(const std::string& name, const std::string& email);
+	bool UpdatePwd(const std::string& name, const std::string& newpwd);
+    bool CheckPwd(const std::string& name , const std::string& pwd , UserInfo& userinfo);
+private:
+    std::unique_ptr<MySqlPool> pool_;
 };

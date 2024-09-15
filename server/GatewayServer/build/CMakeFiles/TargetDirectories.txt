@@ -1,0 +1,4 @@
+/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles/GateServer.dir
+/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles/StatusServer.dir
+/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles/edit_cache.dir
+/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles/rebuild_cache.dir
