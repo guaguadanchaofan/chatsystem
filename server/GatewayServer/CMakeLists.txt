@@ -24,24 +24,6 @@ add_executable(GateServer
     StatusGrpcClient.cc
 )
 
-add_executable(StatusServer
-    StatusServer.cc
-    AsioIOServicePool.cc
-    ConfigMgr.cc
-    Cserver.cc
-    HttpConnection.cc
-    LogicSystem.cc
-    message.grpc.pb.cc
-    message.pb.cc
-    MysqlDao.cc
-    MysqlMgr.cc
-    RedisMgr.cc
-    StatusServiceImpl.cc
-    VerifyGrpcClient.cc
-    StatusGrpcClient.cc
-)
-
 find_package(Protobuf REQUIRED)
 find_package(gRPC REQUIRED)
 target_link_libraries(GateServer PUBLIC -lboost_filesystem -ljsoncpp protobuf::libprotobuf gRPC::grpc++ -lhiredis -lmysqlcppconn)
-target_link_libraries(StatusServer PUBLIC -lboost_filesystem -ljsoncpp protobuf::libprotobuf gRPC::grpc++ -lhiredis -lmysqlcppconn)

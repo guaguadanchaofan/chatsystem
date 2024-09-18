@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(all_test)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/ChatServer)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/GatewayServer)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/StatusServer)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/VarifyServer)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Common)

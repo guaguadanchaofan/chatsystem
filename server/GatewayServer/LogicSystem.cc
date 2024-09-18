@@ -6,54 +6,6 @@
 #include "StatusGrpcClient.h"
 #include "MsgNode.h"
 
-void LogicSystem::PostMsgToQue(std::shared_ptr<LogicNode> msg)
-{
-    std::unique_lock<std::mutex> lock(_mutex);
-    _msg_que.push(msg);
-    //由0变成1则发送通知信号
-    if(_msg_que.size() == 1)
-    {
-        lock.unlock();
-        _consume.notify_one();
-    }
-
-}
-
-void LogicSystem::DealMsg()
-{
-    for(;;)
-    {
-        std::unique_lock<std::mutex> lock(_mutex);
-        //判断队列为空则用条件变量阻塞，并释放锁
-        while(_msg_que.empty() && ! _b_stop)
-        {
-            _consume.wait(lock);
-        }
-        //判断是否为关闭状态，把所有逻辑执行完后推出循环
-        if(_b_stop)
-        {
-            while(!_msg_que.empty())
-            {
-                auto msg_node = _msg_que.front();
-                std::cout << "recv_msg id id" << msg_node -> _recvnode -> _msg_id << std::endl;
-                auto call_back_iter = _fun_callbacks.find(msg_node -> _recvnode -> _msg_id);
-                if(call_back_iter == _fun_callbacks.end())
-                {
-                    _msg_que.pop();
-                    continue;
-                }
-                call_back_iter -> second(msg_node -> _session , msg_node ->_recvnode -> _msg_id,
-                std::string(msg_node ->_recvnode -> _data , msg_node ->_recvnode ->_cur_len));
-                _msg_que.pop();
-            }
-            break;
-        }
-
-        //如果没有停服，且说明队列中有数据
-        auto msg_node = _msg_que.front();
-        
-    }
-}
 
 bool LogicSystem::HandleGet(std::string path, std::shared_ptr<HttpConnection> conn)
 {
