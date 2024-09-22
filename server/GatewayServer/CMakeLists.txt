@@ -9,19 +9,19 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/")
 
 # 添加可执行文件
 add_executable(GateServer
-    AsioIOServicePool.cc
-    ConfigMgr.cc
-    Cserver.cc
-    GateServer.cc
-    HttpConnection.cc
-    LogicSystem.cc
+    AsioIOServicePool.cpp
+    ConfigMgr.cpp
+    CServer.cpp
+    GateServer.cpp
+    HttpConnection.cpp
+    LogicSystem.cpp
     message.grpc.pb.cc
     message.pb.cc
-    MysqlDao.cc
-    MysqlMgr.cc
-    RedisMgr.cc
-    VerifyGrpcClient.cc
-    StatusGrpcClient.cc
+    MysqlDao.cpp
+    MysqlMgr.cpp
+    RedisMgr.cpp
+    VerifyGrpcClient.cpp
+    StatusGrpcClient.cpp
 )
 
 find_package(Protobuf REQUIRED)

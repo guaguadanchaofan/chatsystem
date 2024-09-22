@@ -1,7 +1,7 @@
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: \
- /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.grpc.pb.cc \
+ /home/guagua/Desktop/work/chatsystem/server/GateServer/message.grpc.pb.cc \
  /usr/include/stdc-predef.h \
- /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.pb.h \
+ /home/guagua/Desktop/work/chatsystem/server/GateServer/message.pb.h \
  /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -283,7 +283,7 @@ CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: \
  /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/11/cassert \
- /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.grpc.pb.h \
+ /home/guagua/Desktop/work/chatsystem/server/GateServer/message.grpc.pb.h \
  /usr/local/include/grpc/impl/codegen/port_platform.h \
  /usr/include/linux/version.h \
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \

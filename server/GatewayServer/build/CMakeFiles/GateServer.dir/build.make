@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guagua/Desktop/work/chatsystem/server/GatewayServer
+CMAKE_SOURCE_DIR = /home/guagua/Desktop/work/chatsystem/server/GateServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build
+CMAKE_BINARY_DIR = /home/guagua/Desktop/work/chatsystem/server/GateServer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GateServer.dir/depend.make
@@ -69,220 +69,220 @@ include CMakeFiles/GateServer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GateServer.dir/flags.make
 
-CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o: ../AsioIOServicePool.cc
-CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o -MF CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o.d -o CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/AsioIOServicePool.cc
+CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o: ../AsioIOServicePool.cpp
+CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o -MF CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o.d -o CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/AsioIOServicePool.cpp
 
-CMakeFiles/GateServer.dir/AsioIOServicePool.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/AsioIOServicePool.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/AsioIOServicePool.cc > CMakeFiles/GateServer.dir/AsioIOServicePool.cc.i
+CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/AsioIOServicePool.cpp > CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.i
 
-CMakeFiles/GateServer.dir/AsioIOServicePool.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/AsioIOServicePool.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/AsioIOServicePool.cc -o CMakeFiles/GateServer.dir/AsioIOServicePool.cc.s
+CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/AsioIOServicePool.cpp -o CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.s
 
-CMakeFiles/GateServer.dir/ConfigMgr.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/ConfigMgr.cc.o: ../ConfigMgr.cc
-CMakeFiles/GateServer.dir/ConfigMgr.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GateServer.dir/ConfigMgr.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/ConfigMgr.cc.o -MF CMakeFiles/GateServer.dir/ConfigMgr.cc.o.d -o CMakeFiles/GateServer.dir/ConfigMgr.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/ConfigMgr.cc
+CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: ../ConfigMgr.cpp
+CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GateServer.dir/ConfigMgr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/ConfigMgr.cpp.o -MF CMakeFiles/GateServer.dir/ConfigMgr.cpp.o.d -o CMakeFiles/GateServer.dir/ConfigMgr.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/ConfigMgr.cpp
 
-CMakeFiles/GateServer.dir/ConfigMgr.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/ConfigMgr.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/ConfigMgr.cc > CMakeFiles/GateServer.dir/ConfigMgr.cc.i
+CMakeFiles/GateServer.dir/ConfigMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/ConfigMgr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/ConfigMgr.cpp > CMakeFiles/GateServer.dir/ConfigMgr.cpp.i
 
-CMakeFiles/GateServer.dir/ConfigMgr.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/ConfigMgr.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/ConfigMgr.cc -o CMakeFiles/GateServer.dir/ConfigMgr.cc.s
+CMakeFiles/GateServer.dir/ConfigMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/ConfigMgr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/ConfigMgr.cpp -o CMakeFiles/GateServer.dir/ConfigMgr.cpp.s
 
-CMakeFiles/GateServer.dir/Cserver.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/Cserver.cc.o: ../Cserver.cc
-CMakeFiles/GateServer.dir/Cserver.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GateServer.dir/Cserver.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/Cserver.cc.o -MF CMakeFiles/GateServer.dir/Cserver.cc.o.d -o CMakeFiles/GateServer.dir/Cserver.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/Cserver.cc
+CMakeFiles/GateServer.dir/CServer.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/CServer.cpp.o: ../CServer.cpp
+CMakeFiles/GateServer.dir/CServer.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GateServer.dir/CServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/CServer.cpp.o -MF CMakeFiles/GateServer.dir/CServer.cpp.o.d -o CMakeFiles/GateServer.dir/CServer.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/CServer.cpp
 
-CMakeFiles/GateServer.dir/Cserver.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/Cserver.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/Cserver.cc > CMakeFiles/GateServer.dir/Cserver.cc.i
+CMakeFiles/GateServer.dir/CServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/CServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/CServer.cpp > CMakeFiles/GateServer.dir/CServer.cpp.i
 
-CMakeFiles/GateServer.dir/Cserver.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/Cserver.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/Cserver.cc -o CMakeFiles/GateServer.dir/Cserver.cc.s
+CMakeFiles/GateServer.dir/CServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/CServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/CServer.cpp -o CMakeFiles/GateServer.dir/CServer.cpp.s
 
-CMakeFiles/GateServer.dir/GateServer.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/GateServer.cc.o: ../GateServer.cc
-CMakeFiles/GateServer.dir/GateServer.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GateServer.dir/GateServer.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/GateServer.cc.o -MF CMakeFiles/GateServer.dir/GateServer.cc.o.d -o CMakeFiles/GateServer.dir/GateServer.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/GateServer.cc
+CMakeFiles/GateServer.dir/GateServer.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/GateServer.cpp.o: ../GateServer.cpp
+CMakeFiles/GateServer.dir/GateServer.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GateServer.dir/GateServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/GateServer.cpp.o -MF CMakeFiles/GateServer.dir/GateServer.cpp.o.d -o CMakeFiles/GateServer.dir/GateServer.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/GateServer.cpp
 
-CMakeFiles/GateServer.dir/GateServer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/GateServer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/GateServer.cc > CMakeFiles/GateServer.dir/GateServer.cc.i
+CMakeFiles/GateServer.dir/GateServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/GateServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/GateServer.cpp > CMakeFiles/GateServer.dir/GateServer.cpp.i
 
-CMakeFiles/GateServer.dir/GateServer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/GateServer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/GateServer.cc -o CMakeFiles/GateServer.dir/GateServer.cc.s
+CMakeFiles/GateServer.dir/GateServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/GateServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/GateServer.cpp -o CMakeFiles/GateServer.dir/GateServer.cpp.s
 
-CMakeFiles/GateServer.dir/HttpConnection.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/HttpConnection.cc.o: ../HttpConnection.cc
-CMakeFiles/GateServer.dir/HttpConnection.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GateServer.dir/HttpConnection.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/HttpConnection.cc.o -MF CMakeFiles/GateServer.dir/HttpConnection.cc.o.d -o CMakeFiles/GateServer.dir/HttpConnection.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/HttpConnection.cc
+CMakeFiles/GateServer.dir/HttpConnection.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/HttpConnection.cpp.o: ../HttpConnection.cpp
+CMakeFiles/GateServer.dir/HttpConnection.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GateServer.dir/HttpConnection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/HttpConnection.cpp.o -MF CMakeFiles/GateServer.dir/HttpConnection.cpp.o.d -o CMakeFiles/GateServer.dir/HttpConnection.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/HttpConnection.cpp
 
-CMakeFiles/GateServer.dir/HttpConnection.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/HttpConnection.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/HttpConnection.cc > CMakeFiles/GateServer.dir/HttpConnection.cc.i
+CMakeFiles/GateServer.dir/HttpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/HttpConnection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/HttpConnection.cpp > CMakeFiles/GateServer.dir/HttpConnection.cpp.i
 
-CMakeFiles/GateServer.dir/HttpConnection.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/HttpConnection.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/HttpConnection.cc -o CMakeFiles/GateServer.dir/HttpConnection.cc.s
+CMakeFiles/GateServer.dir/HttpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/HttpConnection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/HttpConnection.cpp -o CMakeFiles/GateServer.dir/HttpConnection.cpp.s
 
-CMakeFiles/GateServer.dir/LogicSystem.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/LogicSystem.cc.o: ../LogicSystem.cc
-CMakeFiles/GateServer.dir/LogicSystem.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GateServer.dir/LogicSystem.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/LogicSystem.cc.o -MF CMakeFiles/GateServer.dir/LogicSystem.cc.o.d -o CMakeFiles/GateServer.dir/LogicSystem.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/LogicSystem.cc
+CMakeFiles/GateServer.dir/LogicSystem.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/LogicSystem.cpp.o: ../LogicSystem.cpp
+CMakeFiles/GateServer.dir/LogicSystem.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GateServer.dir/LogicSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/LogicSystem.cpp.o -MF CMakeFiles/GateServer.dir/LogicSystem.cpp.o.d -o CMakeFiles/GateServer.dir/LogicSystem.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/LogicSystem.cpp
 
-CMakeFiles/GateServer.dir/LogicSystem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/LogicSystem.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/LogicSystem.cc > CMakeFiles/GateServer.dir/LogicSystem.cc.i
+CMakeFiles/GateServer.dir/LogicSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/LogicSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/LogicSystem.cpp > CMakeFiles/GateServer.dir/LogicSystem.cpp.i
 
-CMakeFiles/GateServer.dir/LogicSystem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/LogicSystem.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/LogicSystem.cc -o CMakeFiles/GateServer.dir/LogicSystem.cc.s
+CMakeFiles/GateServer.dir/LogicSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/LogicSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/LogicSystem.cpp -o CMakeFiles/GateServer.dir/LogicSystem.cpp.s
 
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: ../message.grpc.pb.cc
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -MF CMakeFiles/GateServer.dir/message.grpc.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.grpc.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -MF CMakeFiles/GateServer.dir/message.grpc.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/message.grpc.pb.cc
 
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/message.grpc.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.grpc.pb.cc > CMakeFiles/GateServer.dir/message.grpc.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/message.grpc.pb.cc > CMakeFiles/GateServer.dir/message.grpc.pb.cc.i
 
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/message.grpc.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.grpc.pb.cc -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/message.grpc.pb.cc -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.s
 
 CMakeFiles/GateServer.dir/message.pb.cc.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/message.pb.cc.o: ../message.pb.cc
 CMakeFiles/GateServer.dir/message.pb.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GateServer.dir/message.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.pb.cc.o -MF CMakeFiles/GateServer.dir/message.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.pb.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GateServer.dir/message.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.pb.cc.o -MF CMakeFiles/GateServer.dir/message.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.pb.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/message.pb.cc
 
 CMakeFiles/GateServer.dir/message.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/message.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.pb.cc > CMakeFiles/GateServer.dir/message.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/message.pb.cc > CMakeFiles/GateServer.dir/message.pb.cc.i
 
 CMakeFiles/GateServer.dir/message.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/message.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/message.pb.cc -o CMakeFiles/GateServer.dir/message.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/message.pb.cc -o CMakeFiles/GateServer.dir/message.pb.cc.s
 
-CMakeFiles/GateServer.dir/MysqlDao.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/MysqlDao.cc.o: ../MysqlDao.cc
-CMakeFiles/GateServer.dir/MysqlDao.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GateServer.dir/MysqlDao.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/MysqlDao.cc.o -MF CMakeFiles/GateServer.dir/MysqlDao.cc.o.d -o CMakeFiles/GateServer.dir/MysqlDao.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/MysqlDao.cc
+CMakeFiles/GateServer.dir/MysqlDao.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/MysqlDao.cpp.o: ../MysqlDao.cpp
+CMakeFiles/GateServer.dir/MysqlDao.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GateServer.dir/MysqlDao.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/MysqlDao.cpp.o -MF CMakeFiles/GateServer.dir/MysqlDao.cpp.o.d -o CMakeFiles/GateServer.dir/MysqlDao.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/MysqlDao.cpp
 
-CMakeFiles/GateServer.dir/MysqlDao.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/MysqlDao.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/MysqlDao.cc > CMakeFiles/GateServer.dir/MysqlDao.cc.i
+CMakeFiles/GateServer.dir/MysqlDao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/MysqlDao.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/MysqlDao.cpp > CMakeFiles/GateServer.dir/MysqlDao.cpp.i
 
-CMakeFiles/GateServer.dir/MysqlDao.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/MysqlDao.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/MysqlDao.cc -o CMakeFiles/GateServer.dir/MysqlDao.cc.s
+CMakeFiles/GateServer.dir/MysqlDao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/MysqlDao.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/MysqlDao.cpp -o CMakeFiles/GateServer.dir/MysqlDao.cpp.s
 
-CMakeFiles/GateServer.dir/MysqlMgr.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/MysqlMgr.cc.o: ../MysqlMgr.cc
-CMakeFiles/GateServer.dir/MysqlMgr.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GateServer.dir/MysqlMgr.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/MysqlMgr.cc.o -MF CMakeFiles/GateServer.dir/MysqlMgr.cc.o.d -o CMakeFiles/GateServer.dir/MysqlMgr.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/MysqlMgr.cc
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.o: ../MysqlMgr.cpp
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GateServer.dir/MysqlMgr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/MysqlMgr.cpp.o -MF CMakeFiles/GateServer.dir/MysqlMgr.cpp.o.d -o CMakeFiles/GateServer.dir/MysqlMgr.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/MysqlMgr.cpp
 
-CMakeFiles/GateServer.dir/MysqlMgr.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/MysqlMgr.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/MysqlMgr.cc > CMakeFiles/GateServer.dir/MysqlMgr.cc.i
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/MysqlMgr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/MysqlMgr.cpp > CMakeFiles/GateServer.dir/MysqlMgr.cpp.i
 
-CMakeFiles/GateServer.dir/MysqlMgr.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/MysqlMgr.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/MysqlMgr.cc -o CMakeFiles/GateServer.dir/MysqlMgr.cc.s
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/MysqlMgr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/MysqlMgr.cpp -o CMakeFiles/GateServer.dir/MysqlMgr.cpp.s
 
-CMakeFiles/GateServer.dir/RedisMgr.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/RedisMgr.cc.o: ../RedisMgr.cc
-CMakeFiles/GateServer.dir/RedisMgr.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GateServer.dir/RedisMgr.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/RedisMgr.cc.o -MF CMakeFiles/GateServer.dir/RedisMgr.cc.o.d -o CMakeFiles/GateServer.dir/RedisMgr.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/RedisMgr.cc
+CMakeFiles/GateServer.dir/RedisMgr.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/RedisMgr.cpp.o: ../RedisMgr.cpp
+CMakeFiles/GateServer.dir/RedisMgr.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GateServer.dir/RedisMgr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/RedisMgr.cpp.o -MF CMakeFiles/GateServer.dir/RedisMgr.cpp.o.d -o CMakeFiles/GateServer.dir/RedisMgr.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/RedisMgr.cpp
 
-CMakeFiles/GateServer.dir/RedisMgr.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/RedisMgr.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/RedisMgr.cc > CMakeFiles/GateServer.dir/RedisMgr.cc.i
+CMakeFiles/GateServer.dir/RedisMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/RedisMgr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/RedisMgr.cpp > CMakeFiles/GateServer.dir/RedisMgr.cpp.i
 
-CMakeFiles/GateServer.dir/RedisMgr.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/RedisMgr.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/RedisMgr.cc -o CMakeFiles/GateServer.dir/RedisMgr.cc.s
+CMakeFiles/GateServer.dir/RedisMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/RedisMgr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/RedisMgr.cpp -o CMakeFiles/GateServer.dir/RedisMgr.cpp.s
 
-CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o: ../VerifyGrpcClient.cc
-CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o -MF CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o.d -o CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/VerifyGrpcClient.cc
+CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o: ../VerifyGrpcClient.cpp
+CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o -MF CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o.d -o CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/VerifyGrpcClient.cpp
 
-CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/VerifyGrpcClient.cc > CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.i
+CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/VerifyGrpcClient.cpp > CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.i
 
-CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/VerifyGrpcClient.cc -o CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.s
+CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/VerifyGrpcClient.cpp -o CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.s
 
-CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o: ../StatusGrpcClient.cc
-CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o -MF CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o.d -o CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o -c /home/guagua/Desktop/work/chatsystem/server/GatewayServer/StatusGrpcClient.cc
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o: ../StatusGrpcClient.cpp
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o -MF CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o.d -o CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o -c /home/guagua/Desktop/work/chatsystem/server/GateServer/StatusGrpcClient.cpp
 
-CMakeFiles/GateServer.dir/StatusGrpcClient.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/StatusGrpcClient.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GatewayServer/StatusGrpcClient.cc > CMakeFiles/GateServer.dir/StatusGrpcClient.cc.i
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/work/chatsystem/server/GateServer/StatusGrpcClient.cpp > CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i
 
-CMakeFiles/GateServer.dir/StatusGrpcClient.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/StatusGrpcClient.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GatewayServer/StatusGrpcClient.cc -o CMakeFiles/GateServer.dir/StatusGrpcClient.cc.s
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/work/chatsystem/server/GateServer/StatusGrpcClient.cpp -o CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s
 
 # Object files for target GateServer
 GateServer_OBJECTS = \
-"CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o" \
-"CMakeFiles/GateServer.dir/ConfigMgr.cc.o" \
-"CMakeFiles/GateServer.dir/Cserver.cc.o" \
-"CMakeFiles/GateServer.dir/GateServer.cc.o" \
-"CMakeFiles/GateServer.dir/HttpConnection.cc.o" \
-"CMakeFiles/GateServer.dir/LogicSystem.cc.o" \
+"CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o" \
+"CMakeFiles/GateServer.dir/ConfigMgr.cpp.o" \
+"CMakeFiles/GateServer.dir/CServer.cpp.o" \
+"CMakeFiles/GateServer.dir/GateServer.cpp.o" \
+"CMakeFiles/GateServer.dir/HttpConnection.cpp.o" \
+"CMakeFiles/GateServer.dir/LogicSystem.cpp.o" \
 "CMakeFiles/GateServer.dir/message.grpc.pb.cc.o" \
 "CMakeFiles/GateServer.dir/message.pb.cc.o" \
-"CMakeFiles/GateServer.dir/MysqlDao.cc.o" \
-"CMakeFiles/GateServer.dir/MysqlMgr.cc.o" \
-"CMakeFiles/GateServer.dir/RedisMgr.cc.o" \
-"CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o" \
-"CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o"
+"CMakeFiles/GateServer.dir/MysqlDao.cpp.o" \
+"CMakeFiles/GateServer.dir/MysqlMgr.cpp.o" \
+"CMakeFiles/GateServer.dir/RedisMgr.cpp.o" \
+"CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o" \
+"CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o"
 
 # External object files for target GateServer
 GateServer_EXTERNAL_OBJECTS =
 
-../GateServer: CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o
-../GateServer: CMakeFiles/GateServer.dir/ConfigMgr.cc.o
-../GateServer: CMakeFiles/GateServer.dir/Cserver.cc.o
-../GateServer: CMakeFiles/GateServer.dir/GateServer.cc.o
-../GateServer: CMakeFiles/GateServer.dir/HttpConnection.cc.o
-../GateServer: CMakeFiles/GateServer.dir/LogicSystem.cc.o
+../GateServer: CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/ConfigMgr.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/CServer.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/GateServer.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/HttpConnection.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/LogicSystem.cpp.o
 ../GateServer: CMakeFiles/GateServer.dir/message.grpc.pb.cc.o
 ../GateServer: CMakeFiles/GateServer.dir/message.pb.cc.o
-../GateServer: CMakeFiles/GateServer.dir/MysqlDao.cc.o
-../GateServer: CMakeFiles/GateServer.dir/MysqlMgr.cc.o
-../GateServer: CMakeFiles/GateServer.dir/RedisMgr.cc.o
-../GateServer: CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o
-../GateServer: CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o
+../GateServer: CMakeFiles/GateServer.dir/MysqlDao.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/MysqlMgr.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/RedisMgr.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o
+../GateServer: CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o
 ../GateServer: CMakeFiles/GateServer.dir/build.make
 ../GateServer: /usr/local/lib/libprotobuf.so
 ../GateServer: /usr/local/lib/libgrpc++.a
@@ -325,7 +325,7 @@ GateServer_EXTERNAL_OBJECTS =
 ../GateServer: /usr/local/lib/libaddress_sorting.a
 ../GateServer: /usr/local/lib/libupb.a
 ../GateServer: CMakeFiles/GateServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ../GateServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ../GateServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GateServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -337,6 +337,6 @@ CMakeFiles/GateServer.dir/clean:
 .PHONY : CMakeFiles/GateServer.dir/clean
 
 CMakeFiles/GateServer.dir/depend:
-	cd /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guagua/Desktop/work/chatsystem/server/GatewayServer /home/guagua/Desktop/work/chatsystem/server/GatewayServer /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles/GateServer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guagua/Desktop/work/chatsystem/server/GateServer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guagua/Desktop/work/chatsystem/server/GateServer /home/guagua/Desktop/work/chatsystem/server/GateServer /home/guagua/Desktop/work/chatsystem/server/GateServer/build /home/guagua/Desktop/work/chatsystem/server/GateServer/build /home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles/GateServer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GateServer.dir/depend
 

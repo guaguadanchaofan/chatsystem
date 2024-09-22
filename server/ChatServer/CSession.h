@@ -10,6 +10,7 @@
 #include <memory>
 #include "const.h"
 #include "MsgNode.h"
+using namespace std;
 
 
 namespace beast = boost::beast;         // from <boost/beast.hpp>
@@ -49,12 +50,10 @@ private:
 	char _data[MAX_LENGTH];
 	CServer* _server;
 	bool _b_close;
-	std::queue<std::shared_ptr<SendNode> > _send_que;
+	std::queue<shared_ptr<SendNode> > _send_que;
 	std::mutex _send_lock;
-	//收到的消息结构
 	std::shared_ptr<RecvNode> _recv_msg_node;
 	bool _b_head_parse;
-	//收到的头部结构
 	std::shared_ptr<MsgNode> _recv_head_node;
 	int _user_uid;
 };
@@ -62,8 +61,8 @@ private:
 class LogicNode {
 	friend class LogicSystem;
 public:
-	LogicNode(std::shared_ptr<CSession>, std::shared_ptr<RecvNode>);
+	LogicNode(shared_ptr<CSession>, shared_ptr<RecvNode>);
 private:
-	std::shared_ptr<CSession> _session;
-	std::shared_ptr<RecvNode> _recvnode;
+	shared_ptr<CSession> _session;
+	shared_ptr<RecvNode> _recvnode;
 };

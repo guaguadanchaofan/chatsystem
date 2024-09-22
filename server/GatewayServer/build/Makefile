@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guagua/Desktop/work/chatsystem/server/GatewayServer
+CMAKE_SOURCE_DIR = /home/guagua/Desktop/work/chatsystem/server/GateServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build
+CMAKE_BINARY_DIR = /home/guagua/Desktop/work/chatsystem/server/GateServer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles /home/guagua/Desktop/work/chatsystem/server/GateServer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/work/chatsystem/server/GatewayServer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/work/chatsystem/server/GateServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,360 +129,269 @@ GateServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/build
 .PHONY : GateServer/fast
 
-#=============================================================================
-# Target rules for targets named StatusServer
-
-# Build rule for target.
-StatusServer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StatusServer
-.PHONY : StatusServer
-
-# fast build rule for target.
-StatusServer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/build
-.PHONY : StatusServer/fast
-
-AsioIOServicePool.o: AsioIOServicePool.cc.o
+AsioIOServicePool.o: AsioIOServicePool.cpp.o
 .PHONY : AsioIOServicePool.o
 
 # target to build an object file
-AsioIOServicePool.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/AsioIOServicePool.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/AsioIOServicePool.cc.o
-.PHONY : AsioIOServicePool.cc.o
+AsioIOServicePool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o
+.PHONY : AsioIOServicePool.cpp.o
 
-AsioIOServicePool.i: AsioIOServicePool.cc.i
+AsioIOServicePool.i: AsioIOServicePool.cpp.i
 .PHONY : AsioIOServicePool.i
 
 # target to preprocess a source file
-AsioIOServicePool.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/AsioIOServicePool.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/AsioIOServicePool.cc.i
-.PHONY : AsioIOServicePool.cc.i
+AsioIOServicePool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.i
+.PHONY : AsioIOServicePool.cpp.i
 
-AsioIOServicePool.s: AsioIOServicePool.cc.s
+AsioIOServicePool.s: AsioIOServicePool.cpp.s
 .PHONY : AsioIOServicePool.s
 
 # target to generate assembly for a file
-AsioIOServicePool.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/AsioIOServicePool.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/AsioIOServicePool.cc.s
-.PHONY : AsioIOServicePool.cc.s
+AsioIOServicePool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.s
+.PHONY : AsioIOServicePool.cpp.s
 
-ConfigMgr.o: ConfigMgr.cc.o
+CServer.o: CServer.cpp.o
+.PHONY : CServer.o
+
+# target to build an object file
+CServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/CServer.cpp.o
+.PHONY : CServer.cpp.o
+
+CServer.i: CServer.cpp.i
+.PHONY : CServer.i
+
+# target to preprocess a source file
+CServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/CServer.cpp.i
+.PHONY : CServer.cpp.i
+
+CServer.s: CServer.cpp.s
+.PHONY : CServer.s
+
+# target to generate assembly for a file
+CServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/CServer.cpp.s
+.PHONY : CServer.cpp.s
+
+ConfigMgr.o: ConfigMgr.cpp.o
 .PHONY : ConfigMgr.o
 
 # target to build an object file
-ConfigMgr.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/ConfigMgr.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/ConfigMgr.cc.o
-.PHONY : ConfigMgr.cc.o
+ConfigMgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/ConfigMgr.cpp.o
+.PHONY : ConfigMgr.cpp.o
 
-ConfigMgr.i: ConfigMgr.cc.i
+ConfigMgr.i: ConfigMgr.cpp.i
 .PHONY : ConfigMgr.i
 
 # target to preprocess a source file
-ConfigMgr.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/ConfigMgr.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/ConfigMgr.cc.i
-.PHONY : ConfigMgr.cc.i
+ConfigMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/ConfigMgr.cpp.i
+.PHONY : ConfigMgr.cpp.i
 
-ConfigMgr.s: ConfigMgr.cc.s
+ConfigMgr.s: ConfigMgr.cpp.s
 .PHONY : ConfigMgr.s
 
 # target to generate assembly for a file
-ConfigMgr.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/ConfigMgr.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/ConfigMgr.cc.s
-.PHONY : ConfigMgr.cc.s
+ConfigMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/ConfigMgr.cpp.s
+.PHONY : ConfigMgr.cpp.s
 
-Cserver.o: Cserver.cc.o
-.PHONY : Cserver.o
-
-# target to build an object file
-Cserver.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/Cserver.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/Cserver.cc.o
-.PHONY : Cserver.cc.o
-
-Cserver.i: Cserver.cc.i
-.PHONY : Cserver.i
-
-# target to preprocess a source file
-Cserver.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/Cserver.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/Cserver.cc.i
-.PHONY : Cserver.cc.i
-
-Cserver.s: Cserver.cc.s
-.PHONY : Cserver.s
-
-# target to generate assembly for a file
-Cserver.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/Cserver.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/Cserver.cc.s
-.PHONY : Cserver.cc.s
-
-GateServer.o: GateServer.cc.o
+GateServer.o: GateServer.cpp.o
 .PHONY : GateServer.o
 
 # target to build an object file
-GateServer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/GateServer.cc.o
-.PHONY : GateServer.cc.o
+GateServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/GateServer.cpp.o
+.PHONY : GateServer.cpp.o
 
-GateServer.i: GateServer.cc.i
+GateServer.i: GateServer.cpp.i
 .PHONY : GateServer.i
 
 # target to preprocess a source file
-GateServer.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/GateServer.cc.i
-.PHONY : GateServer.cc.i
+GateServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/GateServer.cpp.i
+.PHONY : GateServer.cpp.i
 
-GateServer.s: GateServer.cc.s
+GateServer.s: GateServer.cpp.s
 .PHONY : GateServer.s
 
 # target to generate assembly for a file
-GateServer.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/GateServer.cc.s
-.PHONY : GateServer.cc.s
+GateServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/GateServer.cpp.s
+.PHONY : GateServer.cpp.s
 
-HttpConnection.o: HttpConnection.cc.o
+HttpConnection.o: HttpConnection.cpp.o
 .PHONY : HttpConnection.o
 
 # target to build an object file
-HttpConnection.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/HttpConnection.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/HttpConnection.cc.o
-.PHONY : HttpConnection.cc.o
+HttpConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/HttpConnection.cpp.o
+.PHONY : HttpConnection.cpp.o
 
-HttpConnection.i: HttpConnection.cc.i
+HttpConnection.i: HttpConnection.cpp.i
 .PHONY : HttpConnection.i
 
 # target to preprocess a source file
-HttpConnection.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/HttpConnection.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/HttpConnection.cc.i
-.PHONY : HttpConnection.cc.i
+HttpConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/HttpConnection.cpp.i
+.PHONY : HttpConnection.cpp.i
 
-HttpConnection.s: HttpConnection.cc.s
+HttpConnection.s: HttpConnection.cpp.s
 .PHONY : HttpConnection.s
 
 # target to generate assembly for a file
-HttpConnection.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/HttpConnection.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/HttpConnection.cc.s
-.PHONY : HttpConnection.cc.s
+HttpConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/HttpConnection.cpp.s
+.PHONY : HttpConnection.cpp.s
 
-LogicSystem.o: LogicSystem.cc.o
+LogicSystem.o: LogicSystem.cpp.o
 .PHONY : LogicSystem.o
 
 # target to build an object file
-LogicSystem.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/LogicSystem.cc.o
-.PHONY : LogicSystem.cc.o
+LogicSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cpp.o
+.PHONY : LogicSystem.cpp.o
 
-LogicSystem.i: LogicSystem.cc.i
+LogicSystem.i: LogicSystem.cpp.i
 .PHONY : LogicSystem.i
 
 # target to preprocess a source file
-LogicSystem.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/LogicSystem.cc.i
-.PHONY : LogicSystem.cc.i
+LogicSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cpp.i
+.PHONY : LogicSystem.cpp.i
 
-LogicSystem.s: LogicSystem.cc.s
+LogicSystem.s: LogicSystem.cpp.s
 .PHONY : LogicSystem.s
 
 # target to generate assembly for a file
-LogicSystem.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/LogicSystem.cc.s
-.PHONY : LogicSystem.cc.s
+LogicSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cpp.s
+.PHONY : LogicSystem.cpp.s
 
-MysqlDao.o: MysqlDao.cc.o
+MysqlDao.o: MysqlDao.cpp.o
 .PHONY : MysqlDao.o
 
 # target to build an object file
-MysqlDao.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/MysqlDao.cc.o
-.PHONY : MysqlDao.cc.o
+MysqlDao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cpp.o
+.PHONY : MysqlDao.cpp.o
 
-MysqlDao.i: MysqlDao.cc.i
+MysqlDao.i: MysqlDao.cpp.i
 .PHONY : MysqlDao.i
 
 # target to preprocess a source file
-MysqlDao.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/MysqlDao.cc.i
-.PHONY : MysqlDao.cc.i
+MysqlDao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cpp.i
+.PHONY : MysqlDao.cpp.i
 
-MysqlDao.s: MysqlDao.cc.s
+MysqlDao.s: MysqlDao.cpp.s
 .PHONY : MysqlDao.s
 
 # target to generate assembly for a file
-MysqlDao.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/MysqlDao.cc.s
-.PHONY : MysqlDao.cc.s
+MysqlDao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cpp.s
+.PHONY : MysqlDao.cpp.s
 
-MysqlMgr.o: MysqlMgr.cc.o
+MysqlMgr.o: MysqlMgr.cpp.o
 .PHONY : MysqlMgr.o
 
 # target to build an object file
-MysqlMgr.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/MysqlMgr.cc.o
-.PHONY : MysqlMgr.cc.o
+MysqlMgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cpp.o
+.PHONY : MysqlMgr.cpp.o
 
-MysqlMgr.i: MysqlMgr.cc.i
+MysqlMgr.i: MysqlMgr.cpp.i
 .PHONY : MysqlMgr.i
 
 # target to preprocess a source file
-MysqlMgr.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/MysqlMgr.cc.i
-.PHONY : MysqlMgr.cc.i
+MysqlMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cpp.i
+.PHONY : MysqlMgr.cpp.i
 
-MysqlMgr.s: MysqlMgr.cc.s
+MysqlMgr.s: MysqlMgr.cpp.s
 .PHONY : MysqlMgr.s
 
 # target to generate assembly for a file
-MysqlMgr.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/MysqlMgr.cc.s
-.PHONY : MysqlMgr.cc.s
+MysqlMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cpp.s
+.PHONY : MysqlMgr.cpp.s
 
-RedisMgr.o: RedisMgr.cc.o
+RedisMgr.o: RedisMgr.cpp.o
 .PHONY : RedisMgr.o
 
 # target to build an object file
-RedisMgr.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/RedisMgr.cc.o
-.PHONY : RedisMgr.cc.o
+RedisMgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cpp.o
+.PHONY : RedisMgr.cpp.o
 
-RedisMgr.i: RedisMgr.cc.i
+RedisMgr.i: RedisMgr.cpp.i
 .PHONY : RedisMgr.i
 
 # target to preprocess a source file
-RedisMgr.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/RedisMgr.cc.i
-.PHONY : RedisMgr.cc.i
+RedisMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cpp.i
+.PHONY : RedisMgr.cpp.i
 
-RedisMgr.s: RedisMgr.cc.s
+RedisMgr.s: RedisMgr.cpp.s
 .PHONY : RedisMgr.s
 
 # target to generate assembly for a file
-RedisMgr.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/RedisMgr.cc.s
-.PHONY : RedisMgr.cc.s
+RedisMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cpp.s
+.PHONY : RedisMgr.cpp.s
 
-StatusGrpcClient.o: StatusGrpcClient.cc.o
+StatusGrpcClient.o: StatusGrpcClient.cpp.o
 .PHONY : StatusGrpcClient.o
 
 # target to build an object file
-StatusGrpcClient.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusGrpcClient.cc.o
-.PHONY : StatusGrpcClient.cc.o
+StatusGrpcClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o
+.PHONY : StatusGrpcClient.cpp.o
 
-StatusGrpcClient.i: StatusGrpcClient.cc.i
+StatusGrpcClient.i: StatusGrpcClient.cpp.i
 .PHONY : StatusGrpcClient.i
 
 # target to preprocess a source file
-StatusGrpcClient.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusGrpcClient.cc.i
-.PHONY : StatusGrpcClient.cc.i
+StatusGrpcClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i
+.PHONY : StatusGrpcClient.cpp.i
 
-StatusGrpcClient.s: StatusGrpcClient.cc.s
+StatusGrpcClient.s: StatusGrpcClient.cpp.s
 .PHONY : StatusGrpcClient.s
 
 # target to generate assembly for a file
-StatusGrpcClient.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusGrpcClient.cc.s
-.PHONY : StatusGrpcClient.cc.s
+StatusGrpcClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s
+.PHONY : StatusGrpcClient.cpp.s
 
-StatusServer.o: StatusServer.cc.o
-.PHONY : StatusServer.o
-
-# target to build an object file
-StatusServer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusServer.cc.o
-.PHONY : StatusServer.cc.o
-
-StatusServer.i: StatusServer.cc.i
-.PHONY : StatusServer.i
-
-# target to preprocess a source file
-StatusServer.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusServer.cc.i
-.PHONY : StatusServer.cc.i
-
-StatusServer.s: StatusServer.cc.s
-.PHONY : StatusServer.s
-
-# target to generate assembly for a file
-StatusServer.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusServer.cc.s
-.PHONY : StatusServer.cc.s
-
-StatusServiceImpl.o: StatusServiceImpl.cc.o
-.PHONY : StatusServiceImpl.o
-
-# target to build an object file
-StatusServiceImpl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusServiceImpl.cc.o
-.PHONY : StatusServiceImpl.cc.o
-
-StatusServiceImpl.i: StatusServiceImpl.cc.i
-.PHONY : StatusServiceImpl.i
-
-# target to preprocess a source file
-StatusServiceImpl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusServiceImpl.cc.i
-.PHONY : StatusServiceImpl.cc.i
-
-StatusServiceImpl.s: StatusServiceImpl.cc.s
-.PHONY : StatusServiceImpl.s
-
-# target to generate assembly for a file
-StatusServiceImpl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/StatusServiceImpl.cc.s
-.PHONY : StatusServiceImpl.cc.s
-
-VerifyGrpcClient.o: VerifyGrpcClient.cc.o
+VerifyGrpcClient.o: VerifyGrpcClient.cpp.o
 .PHONY : VerifyGrpcClient.o
 
 # target to build an object file
-VerifyGrpcClient.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/VerifyGrpcClient.cc.o
-.PHONY : VerifyGrpcClient.cc.o
+VerifyGrpcClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o
+.PHONY : VerifyGrpcClient.cpp.o
 
-VerifyGrpcClient.i: VerifyGrpcClient.cc.i
+VerifyGrpcClient.i: VerifyGrpcClient.cpp.i
 .PHONY : VerifyGrpcClient.i
 
 # target to preprocess a source file
-VerifyGrpcClient.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/VerifyGrpcClient.cc.i
-.PHONY : VerifyGrpcClient.cc.i
+VerifyGrpcClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.i
+.PHONY : VerifyGrpcClient.cpp.i
 
-VerifyGrpcClient.s: VerifyGrpcClient.cc.s
+VerifyGrpcClient.s: VerifyGrpcClient.cpp.s
 .PHONY : VerifyGrpcClient.s
 
 # target to generate assembly for a file
-VerifyGrpcClient.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/VerifyGrpcClient.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/VerifyGrpcClient.cc.s
-.PHONY : VerifyGrpcClient.cc.s
+VerifyGrpcClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.s
+.PHONY : VerifyGrpcClient.cpp.s
 
 message.grpc.pb.o: message.grpc.pb.cc.o
 .PHONY : message.grpc.pb.o
@@ -490,7 +399,6 @@ message.grpc.pb.o: message.grpc.pb.cc.o
 # target to build an object file
 message.grpc.pb.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/message.grpc.pb.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/message.grpc.pb.cc.o
 .PHONY : message.grpc.pb.cc.o
 
 message.grpc.pb.i: message.grpc.pb.cc.i
@@ -499,7 +407,6 @@ message.grpc.pb.i: message.grpc.pb.cc.i
 # target to preprocess a source file
 message.grpc.pb.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/message.grpc.pb.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/message.grpc.pb.cc.i
 .PHONY : message.grpc.pb.cc.i
 
 message.grpc.pb.s: message.grpc.pb.cc.s
@@ -508,7 +415,6 @@ message.grpc.pb.s: message.grpc.pb.cc.s
 # target to generate assembly for a file
 message.grpc.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/message.grpc.pb.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/message.grpc.pb.cc.s
 .PHONY : message.grpc.pb.cc.s
 
 message.pb.o: message.pb.cc.o
@@ -517,7 +423,6 @@ message.pb.o: message.pb.cc.o
 # target to build an object file
 message.pb.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/message.pb.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/message.pb.cc.o
 .PHONY : message.pb.cc.o
 
 message.pb.i: message.pb.cc.i
@@ -526,7 +431,6 @@ message.pb.i: message.pb.cc.i
 # target to preprocess a source file
 message.pb.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/message.pb.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/message.pb.cc.i
 .PHONY : message.pb.cc.i
 
 message.pb.s: message.pb.cc.s
@@ -535,7 +439,6 @@ message.pb.s: message.pb.cc.s
 # target to generate assembly for a file
 message.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/message.pb.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StatusServer.dir/build.make CMakeFiles/StatusServer.dir/message.pb.cc.s
 .PHONY : message.pb.cc.s
 
 # Help Target
@@ -547,16 +450,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GateServer"
-	@echo "... StatusServer"
 	@echo "... AsioIOServicePool.o"
 	@echo "... AsioIOServicePool.i"
 	@echo "... AsioIOServicePool.s"
+	@echo "... CServer.o"
+	@echo "... CServer.i"
+	@echo "... CServer.s"
 	@echo "... ConfigMgr.o"
 	@echo "... ConfigMgr.i"
 	@echo "... ConfigMgr.s"
-	@echo "... Cserver.o"
-	@echo "... Cserver.i"
-	@echo "... Cserver.s"
 	@echo "... GateServer.o"
 	@echo "... GateServer.i"
 	@echo "... GateServer.s"
@@ -578,12 +480,6 @@ help:
 	@echo "... StatusGrpcClient.o"
 	@echo "... StatusGrpcClient.i"
 	@echo "... StatusGrpcClient.s"
-	@echo "... StatusServer.o"
-	@echo "... StatusServer.i"
-	@echo "... StatusServer.s"
-	@echo "... StatusServiceImpl.o"
-	@echo "... StatusServiceImpl.i"
-	@echo "... StatusServiceImpl.s"
 	@echo "... VerifyGrpcClient.o"
 	@echo "... VerifyGrpcClient.i"
 	@echo "... VerifyGrpcClient.s"
